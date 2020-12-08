@@ -1,6 +1,6 @@
 /*
 *   Judge       : LightOJ
-*   Problem     : Mathematically Hard
+*   Problem     : 1007 - Mathematically Hard
 *   Algorithms  : Euler Phi
 *   Solved By   : Abu Rifat Muhammed Al Hasib
 *   Website     : aburifat.com
