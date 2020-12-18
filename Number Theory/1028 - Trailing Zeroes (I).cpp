@@ -40,19 +40,17 @@ int main()
         ll n;
         cin>>n;
         ll ans=1;
-        if(ans){
-            for(ll i=0;primes[i]*primes[i]<=n;i++){
-                if(n%primes[i]==0){
-                    ll ct=0;
-                    while(n%primes[i]==0){
-                        n/=primes[i];
-                        ct++;
-                    }
-                    if(ct)ans*=(ct+1);
+        for(ll i=0;primes[i]*primes[i]<=n;i++){
+            if(n%primes[i]==0){
+                ll ct=0;
+                while(n%primes[i]==0){
+                    n/=primes[i];
+                    ct++;
                 }
+                if(ct)ans*=(ct+1);
             }
-            if(n>1)ans*=2;
         }
+        if(n>1)ans*=2;
         cout<<"Case "<<T<<": "<<ans-1<<"\n";
     }
     return 0;
