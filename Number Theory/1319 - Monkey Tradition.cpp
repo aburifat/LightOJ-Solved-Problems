@@ -15,7 +15,7 @@ ll binpow(ll base, ll power, ll mod)
     return result;
 }
 
-ll modinv(ll a, ll mod){
+ll modInv(ll a, ll mod){
     return binpow(a,mod-2,mod);
 }
 
