@@ -15,7 +15,7 @@ ll binpow(ll base, ll power, ll mod)
     return result;
 }
 
-ll modInv(ll a, ll mod){
+ll modinv(ll a, ll mod){
     return binpow(a,mod-2,mod);
 }
 
@@ -25,7 +25,7 @@ int main(){
     for(ll T=1;T<=t;T++){
         ll n;
         cin>>n;
-        ll p[n+5],r[n+5],y[n+5],z[n+5];//mods,reminders,yi,yi^-1
+        ll p[n+5],r[n+5],y[n+5],z[n+5];
         for(ll i=0;i<n;i++)cin>>p[i]>>r[i];
         ll MUL=1;
         for(ll i=0;i<n;i++)MUL*=p[i];
@@ -41,3 +41,6 @@ int main(){
     }
     return 0;
 }
+
+
+
